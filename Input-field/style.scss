@@ -1,17 +1,45 @@
-<Form.Item
-                name="name"
-                rules={[
-                  { required: true, message: 'please input Project Name' },
-                ]}
-              >
-                <FloatInputLabel
-                  label=" Project Name"
-                  placeholder="name"
-                  value={form.getFieldsValue(['name'])}
-                  type="text"
-                />
-                </Form.Item>
+/* stylelint-disable */
+.float-label {
+  position: relative;
+  height: 50px;
 
+  input.ant-input {
+    padding: 1.2em 0.6em;
+    border-radius: 8px;
+  }
+}
 
+.float-label.text-area-field {
+  height: 100px;
 
-                
+  .ant-input {
+    height: 100%;
+  }
+}
+
+.float-input {
+  border-radius: 8px;
+}
+
+.label {
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 24px;
+  transition: 0.2s ease all;
+  font-size: 14px !important;
+  z-index: 5;
+}
+
+.as-placeholder {
+  color: #7f8aa4;
+}
+
+.as-label {
+  top: 0;
+  font-size: 12px !important;
+  background: #fff;
+  padding: 0 4px;
+  margin-left: -4px;
+}
