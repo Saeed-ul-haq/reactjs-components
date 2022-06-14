@@ -1,0 +1,17 @@
+<Form.Item
+                name="name"
+                rules={[
+                  { required: true, message: 'please input Project Name' },
+                ]}
+              >
+                <FloatInputLabel
+                  label=" Project Name"
+                  placeholder="name"
+                  value={form.getFieldsValue(['name'])}
+                  type="text"
+                />
+                </Form.Item>
+
+
+
+                
